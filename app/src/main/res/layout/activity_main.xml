@@ -8,98 +8,23 @@
     tools:layout_editor_absoluteY="81dp">
 
     <Button
-        android:id="@+id/del"
-        android:layout_width="34dp"
-        android:layout_height="38dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:onClick="Del"
-        android:text="/"
-        app:layout_constraintBaseline_toBaselineOf="@+id/min"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/min" />
-
-    <EditText
-        android:id="@+id/Num1"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:ems="10"
-        android:hint="First number"
-        android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@+id/sum"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/Num2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:ems="10"
-        android:hint="Second number"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="@+id/min"
-        app:layout_constraintEnd_toStartOf="@+id/min"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/min" />
-
-    <TextView
-        android:id="@+id/Result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="11dp"
-        android:layout_marginRight="11dp"
-        android:text="Result"
-        android:textSize="20sp"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/Num2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/min"
-        android:layout_width="41dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="117dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="116dp"
-        android:onClick="Min"
-        android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/Result"
-        app:layout_constraintEnd_toStartOf="@+id/del"
-        app:layout_constraintStart_toEndOf="@+id/Num2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/del"
-        android:layout_width="36dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:onClick="Umn"
-        android:text="*"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/sum"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/sum"
-        android:layout_width="41dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:onClick="Sum"
-        android:text="+"
-        app:layout_constraintBaseline_toBaselineOf="@+id/del"
-        app:layout_constraintEnd_toStartOf="@+id/del"
-        app:layout_constraintStart_toEndOf="@+id/Num1" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
